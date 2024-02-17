@@ -1,0 +1,47 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-top: 10%;
+    background-color: #81bede;
+}
+
+
+.water-glass {
+    width: 80px;
+    height: 300px;
+    border: 3px solid #000;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.water-level {
+    background-color: blue; 
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    transition: height 0.5s; 
+}
+/*
+.message{
+    font-size: 30px;
+    font-weight: bold;
+    color:antiquewhite;
+}
+
+.heart{
+    width: 300px;
+}
+
+.yes,.no{
+    margin-top: 3%;
+    border:none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+*/
