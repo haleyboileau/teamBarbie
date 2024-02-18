@@ -5,10 +5,10 @@ body{
     background-color: #81bede;
 }
 
-
 .water-glass {
-    width: 80px;
-    height: 300px;
+    width: 100px;
+    height: 200px;
+    position: relative;
     border: 3px solid #000;
     overflow: hidden;
     margin: 0 auto;
@@ -16,32 +16,16 @@ body{
 }
 
 .water-level {
-    background-color: blue; 
+    background-color: blue; /* Color of water */
     width: 100%;
     height: 0;
     position: absolute;
     bottom: 0;
-    transition: height 0.5s; 
-}
-/*
-.message{
-    font-size: 30px;
-    font-weight: bold;
-    color:antiquewhite;
+    transition: height 0.5s; /* Smooth transition for water level */
 }
 
-.heart{
-    width: 300px;
-}
 
-.yes,.no{
-    margin-top: 3%;
-    border:none;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 80px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: antiquewhite;
-    font-weight: bold;
+#goalDisplay {
+    text-align: center;
+    margin-top: 10px;
 }
-*/
