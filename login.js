@@ -40,7 +40,7 @@ curr_user.addEventListener('submit', function(event)
 {event.preventDefault();
    //const account = {user: curr_user, pass: curr_pass};
    var curr = new account(curr_username.value , curr_pass.value);
-   if(user_data.has(curr) == true && user_data.)
+   if(user_data.has(curr) == true && user_data.size() == 0)
    {
     //grab data
     cur_user_list = user_data.get(curr);
