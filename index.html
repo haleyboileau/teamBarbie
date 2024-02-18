@@ -11,13 +11,24 @@
         <h1>Water Consumption Tracker</h1>
     </header>
     <main>
+        <form id="goalForm">
+            <div class="input-group">
+                <label for="waterGoal">Water goal (oz):</label>
+                <input type="number" id="waterGoal" name="waterGoal" min="0" placeholder="Enter goal amount">
+                <button type="submit" id="submitGoal">Submit Water Goal</button>
+            </div>
+        </form>
+        <div id="goalDisplay"></div>
         <div class="water-glass" id="waterGlass">
             <div class="water-level" id="waterLevel"></div>
         </div>
+        <br>
         <form id="waterForm">
-            <label for="waterInput">Enter water intake (ml):</label>
-            <input type="number" id="waterInput" name="waterInput" min="0" placeholder="Enter amount">
-            <button type="submit">Submit</button>
+            <div class="input-group">
+                <label for="waterInput">Enter water intake (oz):</label>
+                <input type="number" id="waterInput" name="waterInput" min="0" placeholder="Enter amount">
+                <button type="submit" id="submitWater">Submit Water Intake</button>
+            </div>
         </form>
         <div class = "button">
             <input type = "button" value = "Log In" class = "login" id = "login" onclick = "window.location.replace('login.html');">

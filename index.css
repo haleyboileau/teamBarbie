@@ -5,25 +5,15 @@ body{
     background-color: #81bede;
 }
 
-
 .water-glass {
-    width: 80px;
-    height: 300px;
+    width: 100px;
+    height: 200px;
+    position: relative;
     border: 3px solid #000;
     overflow: hidden;
     margin: 0 auto;
     margin-top: 50px;
 }
-
-.water-level {
-    background-color: blue; 
-    width: 100%;
-    height: 0;
-    position: absolute;
-    bottom: 0;
-    transition: height 0.5s; 
-}
-
 .login {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: right;
@@ -32,6 +22,15 @@ body{
     border-radius: 10px;
     background-color: antiquewhite;
     font-weight: bold;
+}
+
+.water-level {
+    background-color: blue; /* Color of water */
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    transition: height 0.5s; 
 }
 /*
 .message{
