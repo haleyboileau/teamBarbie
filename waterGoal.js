@@ -1,17 +1,16 @@
 const waterGoalForm = document.getElementById('waterGoalForm');
 const resultDiv = document.getElementById('result');
+let suggestedGoal = 0;
 
 waterGoalForm.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const age = parseInt(document.getElementById('age').value);
     const weight = parseFloat(document.getElementById('weight').value);
     const activityLevel = document.getElementById('activityLevel').value;
 
     // Calculate suggested water intake goal based on user's input
-    let suggestedGoal = 0;
 
-    suggestedGoal = weight / 2;
+    suggestedGoal = weight / 2; // Based on Penn Medicine (2015) https://www.pennmedicine.org/updates/blogs/health-and-wellness/2015/may/how-much-water-do-you-need-each-day
     if (activityLevel === 'low'){
         suggestedGoal = suggestedGoal + 5;
     }

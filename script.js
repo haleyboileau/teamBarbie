@@ -4,20 +4,21 @@ const goalForm = document.getElementById('goalForm');
 const waterGoalInput = document.getElementById('waterGoal');
 const waterGlass = document.getElementById('waterGlass');
 const waterLevel = document.getElementById('waterLevel');
-const goalDisplay = document.getElementById('goalDisplay');
+//const goalDisplay = document.getElementById('goalDisplay');
 
 let curr_date = new Date().toJSON().slice(0, 10);
 console.log(curr_date); 
 
 let goal = 80; // Default goal value
 let sessionWater = 0; // Initialize water intake for the current session
-goalDisplay.textContent = `Your water goal: ${goal} oz`; 
+goalDisplay.textContent = `Current water intake goal: 80 oz`; 
 
 // Function to update water level
 function updateWaterLevel(amount) {
     const maxLevel = 400;
     const percentage = (amount / goal) * 100; // Convert amount to percentage
     const height = (percentage / 200) * maxLevel; // Calculate height of water level in pixels
+    waterLeft = goal - amount;
 
     waterLevel.style.height = height + 'px'; // Set height of water level
 }
@@ -46,10 +47,11 @@ goalForm.addEventListener('submit', function(event) {
 
     if (!isNaN(newGoal) && newGoal > 0) {
         goal = newGoal; // Update goal value
-        goalDisplay.textContent = `Your water goal: ${goal} oz`; // Update goal display
+        goalDisplay.textContent = `Current water intake goal: ${goal} oz`; // Update goal display
         waterGoalInput.value = ''; // Clear input field after submission
         updateWaterLevel(sessionWater); // Update water level with new goal
     } else {
         alert('Please enter a valid goal.'); // Display error message if input is invalid
     }
 });
+

@@ -10,15 +10,16 @@
         <h1>Water Consumption Tracker</h1>
     </header>
     <main>
-        <button onclick="window.location.href = 'waterGoal.html';">Calculate Water Intake Goal</button>
-        <br>
         <form id="goalForm">
             <div class="input-group">
-                <label for="waterGoal">Water goal (oz):</label>
+                <label for="waterGoal">Water intake goal (oz):</label>
                 <input type="number" id="waterGoal" name="waterGoal" min="0" placeholder="Enter goal amount">
                 <button type="submit" id="submitGoal">Submit Water Goal</button>
             </div>
         </form>
+        <label>Need help calculating your water intake goal?</label>
+        <button onclick="window.location.href = 'waterGoal.html';">Calculate Water Intake Goal</button>
+        <br><br>
         <div id="goalDisplay"></div>
         <div class="water-glass" id="waterGlass">
             <div class="water-level" id="waterLevel"></div>
