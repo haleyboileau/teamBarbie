@@ -14,6 +14,7 @@ waterForm.addEventListener('submit', function(event) {
     } else {
         alert('Please enter a valid amount.'); // Display error message if input is invalid
     }
+
 });
 
 // Function to update water level in the glass

@@ -23,6 +23,16 @@ body{
     bottom: 0;
     transition: height 0.5s; 
 }
+
+.login {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: right;
+    margin-top:0%;
+    background-color: #2b0c68;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    font-weight: bold;
+}
 /*
 .message{
     font-size: 30px;
