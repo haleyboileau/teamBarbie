@@ -17,10 +17,10 @@
         </div> -->
 
         <form id="curr_user">
-            <label for="curr_user">Enter Username:</label>
-            <input type ="text" id="curr_user" name="curr_User" minlength="6" placeholder="name">
+            <label for="curr_username">Enter Username:</label>
+            <input type ="text" id="curr_username" name="curr_username" minlength="6" placeholder="name">
             <label for="curr_user">Enter Password:</label>
-            <input type ="text" id="curr_pass" name="curr_Pass" minlength="6" placeholder="password">
+            <input type ="text" id="curr_pass" name="curr_pass" minlength="6" placeholder="password">
             <button type="submit">Submit</button>
         </form>
 
@@ -29,12 +29,18 @@
         </header>
 
         <form id="new_user">
-            <label for="user">Enter Username:</label>
-            <input type ="text" id="new_user" name="User" minlength="6" placeholder="name">
-            <label for="user">Enter Password:</label>
+            <label for="new_username">Enter Username:</label>
+            <input type ="text" id="new_username" name="User" minlength="6" placeholder="name">
+            <label for="new_pass">Enter Password:</label>
             <input type ="text" id="new_pass" name="Pass" minlength="6" placeholder="password">
             <button type="submit">Submit</button>
         </form>
+           
+
+        <div id="result"></div>
+          <button onclick="window.location.href = 'index.html';">Back to home screen</button>
+         <script src="waterGoal.js"></script>
+
 
 
     </main>

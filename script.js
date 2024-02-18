@@ -6,6 +6,9 @@ const waterGlass = document.getElementById('waterGlass');
 const waterLevel = document.getElementById('waterLevel');
 const goalDisplay = document.getElementById('goalDisplay');
 
+let curr_date = new Date().toJSON().slice(0, 10);
+console.log(curr_date); 
+
 let goal = 80; // Default goal value
 let sessionWater = 0; // Initialize water intake for the current session
 goalDisplay.textContent = `Your water goal: ${goal} oz`; 
